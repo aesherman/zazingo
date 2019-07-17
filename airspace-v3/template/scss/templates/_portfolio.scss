@@ -1,0 +1,115 @@
+.portfolio-work{
+	padding: 80px 0;
+	.block{
+		.portfolio-menu{
+			text-align: center;
+			ul{
+			    margin-bottom: 40px;
+				li{
+					display: inline-block;
+					border:1px solid $border-color;
+					padding: 8px 25px;
+					cursor: pointer;
+					font-size: 15px;
+					color: #333333;
+					@include transition (all, 0.3s, ease);
+				}
+				.mixitup-control-active {
+					background:$primary-color;
+					color:$light;
+					border:1px solid $primary-color;
+				}
+			}
+			
+		}
+		.portfolio-contant{
+			ul{
+				li{
+					display:inline-block;
+					width: 32.22%;
+					position: relative;
+					margin-left:-4px;
+					&:hover .item-overly {
+						opacity: 1;
+					}
+					&:hover .position-center {
+						position: absolute;
+						top: 60%;
+						@include translate (-50%, -50%);
+					} 
+					a{
+						display: block;
+						color: #fff;
+						h4{
+							margin:0;
+							text-transform:uppercase;
+							margin-bottom:10px;
+							font-weight:400;
+						}
+						p{
+							font-size: 13px;
+							line-height:20px;
+							color:$light;
+						}
+					}
+				}
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+			.item-overly {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				background: rgba(60, 55, 55, 0.9);
+				opacity: 0;
+				@include transition (all, 0.3s, ease)
+				text-align: center;
+			}
+			.position-center {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				@include translate (-50%,-50%);
+				@include transition (all, 0.3s, ease);
+			}
+		}
+	}
+}
+
+
+
+
+
+
+// Portfolio Single Page
+.portfolio-single-page {
+	.project-details {
+		h4 {
+			margin-bottom:20px;
+			padding-bottom:10px;
+			border-bottom:2px dashed $border-color;
+		}
+		span {
+			color: #838383;
+			width: 180px;
+			display:inline-block;
+		}
+		strong {
+			color: #313131;
+			font-weight: normal;
+		}
+			
+		ul {
+			li {
+				margin-bottom:10px;
+			}
+		}
+	}
+}
+
+
+
